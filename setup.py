@@ -18,6 +18,7 @@ setup(name='sassdog',
           'watchdog',
           'pyscss',
           'colorama',
+          'csscompressor',
       ],
       scripts=['bin/sassdog'],
       zip_safe=False)

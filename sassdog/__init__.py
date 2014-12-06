@@ -8,6 +8,7 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 import scss
+from csscompressor import compress
 
 from colorama import init as colorama_init
 from colorama import Fore, Back, Style
@@ -44,7 +45,8 @@ def compile_scss(src):
         css_filename = src.replace('.scss', '.css')
 
         css_file = open(css_filename, 'w')
-        css_file.write(scss_compiled)
+        css_file.write(compress(scss_compiled))
+        #css_file.write(scss_compiled)
         css_file.close()
 
         print(Fore.GREEN + css_filename + ' ' + 'compiled')
