@@ -17,15 +17,18 @@ Using pip you can install with:
 
 Useage
 ------
-Just move to the directory of your project
+Move to the directory of your project:
+
 	cd path/to/awesome/project/
 
-Then start sassdog
+Then start sassdog:
+
 	sassdog
 
 Sassdog will sit a wait untill you create/modify a .scss file. When you make changes to the sass files it will compile them into loving minified css files.
 
-If you want to compile all your .scss files when starting sassdog, run
+If you want to compile all your .scss files when starting sassdog, run:
+
 	sassdog --compile
 
 To stop sassdog, just press CTRL+C to stop the python process.
