@@ -25,7 +25,7 @@ Then start sassdog:
 
 	sassdog
 
-Sassdog will sit a wait untill you create/modify a .scss file. When you make changes to the sass files it will compile them into loving minified css files.
+Sassdog will sit a wait untill you create/modify a .scss file. When you make changes to the sass files it will compile them into minified css files.
 
 If you want to compile all your .scss files when starting sassdog, run:
 

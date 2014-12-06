@@ -46,7 +46,6 @@ def compile_scss(src):
 
         css_file = open(css_filename, 'w')
         css_file.write(compress(scss_compiled))
-        #css_file.write(scss_compiled)
         css_file.close()
 
         print(Fore.GREEN + css_filename + ' ' + 'compiled')
@@ -73,7 +72,6 @@ def main():
     if args.compile:
         compile_all_scss()
 
-    #path = sys.argv[1] if len(sys.argv) > 1 else '.'
     path = '.'
     observer = Observer()
 
